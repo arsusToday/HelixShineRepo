@@ -1,15 +1,13 @@
-package com.alchemist.angelsagao
+package com.alchemist.angelsagao.fijc
 
-import android.R
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.view.animation.Animation
-import android.view.animation.AnimationUtils
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
 import com.alchemist.angelsagao.databinding.ActivityMatrixBinding
+import com.alchemist.angelsagao.ihuduhasdokx.SayAct
 
 
 class MatrixAct : AppCompatActivity() {

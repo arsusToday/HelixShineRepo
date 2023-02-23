@@ -1,11 +1,11 @@
-package com.alchemist.angelsagao
+package com.alchemist.angelsagao.fijc
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.core.view.isVisible
-import com.alchemist.angelsagao.databinding.ActivityMenuMainHubBinding
+import com.alchemist.angelsagao.eowek.LiberationAct
 import com.alchemist.angelsagao.databinding.ActivitySayMyNameActyBinding
 
 class SayMyNameActy : AppCompatActivity() {

@@ -1,5 +1,8 @@
-package com.alchemist.angelsagao.fragments
-
+package com.alchemist.angelsagao.hsauidhwisa
+import com.alchemist.angelsagao.R
+import com.alchemist.angelsagao.eowek.Uqoqoisjxuhcsgy
+import org.koin.androidx.viewmodel.ext.android.activityViewModel
+import org.koin.core.qualifier.named
 import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,16 +10,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.alchemist.angelsagao.R
-import com.alchemist.angelsagao.ViewMod
-import org.koin.androidx.viewmodel.ext.android.activityViewModel
-import org.koin.core.qualifier.named
 
 
-class FragmentUno : Fragment() {
 
-    private lateinit var mContext: Context
-    val viewMainModel by activityViewModel<ViewMod>(named("MainModel"))
+class Dsoosisidjuhwsa : Fragment() {
+
+    private lateinit var uysgdjisdji: Context
+    val ixjzcjixji by activityViewModel<Uqoqoisjxuhcsgy>(named("MainModel"))
 
 
     override fun onCreateView(
@@ -24,18 +24,18 @@ class FragmentUno : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_uno, container, false)
+        return inflater.inflate(R.layout.owiwjsjidhux, container, false)
     }
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
-        mContext=context
+        uysgdjisdji=context
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        viewMainModel.fbDeee(mContext)
-        findNavController().navigate(R.id.action_fragment_uno_to_fragmentDos)
+        ixjzcjixji.eokkowkokodokdoksajijxcijzc(uysgdjisdji)
+        findNavController().navigate(R.id.iicooovocijhudsa)
 
     }
 }

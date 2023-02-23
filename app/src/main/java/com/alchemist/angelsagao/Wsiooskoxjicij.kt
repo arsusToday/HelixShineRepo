@@ -9,25 +9,25 @@ import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.GlobalContext
 import org.koin.core.logger.Level
 
-class AppClass: Application() {
+class Wsiooskoxjicij: Application() {
     override fun onCreate() {
         super.onCreate()
         OneSignal.initWithContext(this)
         OneSignal.setAppId("527bd9a1-ce0d-4d1a-829b-0c3b9cc3ef85")
         MyTracker.initTracker("39123225874634910451", this)
 
-        val trackerConfig = MyTracker.getTrackerConfig()
-        trackerConfig.isTrackingLaunchEnabled = true
-        val instID = MyTracker.getInstanceId(this)
-        val shP = getSharedPreferences("SHARED_PREF", Context.MODE_PRIVATE)
-        shP.edit().putString("instId", instID).apply()
+        val sidjjisadhusdhu = MyTracker.getTrackerConfig()
+        sidjjisadhusdhu.isTrackingLaunchEnabled = true
+        val xzbchzxchbhb = MyTracker.getInstanceId(this)
+        val sidjdisj = getSharedPreferences("SHARED_PREF", Context.MODE_PRIVATE)
+        sidjdisj.edit().putString("instId", xzbchzxchbhb).apply()
 
         GlobalContext.startKoin {
             androidLogger(Level.DEBUG)
-            androidContext(this@AppClass)
+            androidContext(this@Wsiooskoxjicij)
             modules(
                 listOf(
-                    appModule, viewModelModule
+                    xijzcijsijidhuhud, siisjijsikosdkokos
                 )
             )
         }

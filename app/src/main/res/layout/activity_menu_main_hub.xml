@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
     android:id="@+id/layoutMenuHub"
-    tools:context=".MenuMainHubAct">
+    tools:context=".fijc.MenuMainHubAct">
 
     <TextView
         android:id="@+id/helixTitle"

@@ -3,6 +3,7 @@ package com.alchemist.angelsagao
 import android.app.Application
 import android.content.Context
 import android.content.SharedPreferences
+import com.alchemist.angelsagao.eowek.Uqoqoisjxuhcsgy
 import com.squareup.moshi.Moshi
 import org.koin.android.ext.koin.androidApplication
 import org.koin.androidx.viewmodel.dsl.viewModel
@@ -11,15 +12,15 @@ import org.koin.dsl.module
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 
-val appModule = module {
-    single<MainInterface>(named("HostInter")) {
+val xijzcijsijidhuhud = module {
+    single<Fiwjwijwijshuadgyxzc>(named("HostInter")) {
         get<Retrofit>(named("RetroDev"))
-            .create(MainInterface::class.java)
+            .create(Fiwjwijwijshuadgyxzc::class.java)
     }
 
-    single <ApiInterface> (named("ApiInter")) {
+    single <Skxmzcisaihushu> (named("ApiInter")) {
         get<Retrofit>(named("RetroCountry"))
-            .create(ApiInterface::class.java)
+            .create(Skxmzcisaihushu::class.java)
     }
     single<Retrofit>(named("RetroCountry")) {
         Retrofit.Builder()
@@ -34,34 +35,34 @@ val appModule = module {
             .build()
     }
     factory(named("DevRep")) {
-        DevRepo(get(named("HostInter")))
+        Eqoqkwjisdhushd(get(named("HostInter")))
     }
     factory (named("CountryRep")) {
-        CountryRepo(get(named("ApiInter")))
+        Xozkkozxjisdhushu(get(named("ApiInter")))
     }
 
     single {
-        provideMoshi()
+        vcvxhuivjjidjihuf()
     }
     single(named("SharedPreferences")) {
-        provideSharedPref(androidApplication())
+        nxncjjxsij(androidApplication())
     }
 
 }
-fun provideSharedPref(app: Application): SharedPreferences {
-    return app.applicationContext.getSharedPreferences(
+fun nxncjjxsij(orkeokekooskd: Application): SharedPreferences {
+    return orkeokekooskd.applicationContext.getSharedPreferences(
         "SHARED_PREF",
         Context.MODE_PRIVATE
     )
 }
 
-fun provideMoshi(): Moshi {
+fun vcvxhuivjjidjihuf(): Moshi {
     return Moshi.Builder().build()
 }
 
-val viewModelModule = module {
+val siisjijsikosdkokos = module {
     viewModel(named("MainModel")) {
-        ViewMod(
+        Uqoqoisjxuhcsgy(
             get(named("CountryRep")),
             get(named("DevRep")),
             get(named("SharedPreferences")),

@@ -1,4 +1,4 @@
-package com.alchemist.angelsagao
+package com.alchemist.angelsagao.fijc
 
 import android.content.Intent
 import android.content.SharedPreferences
