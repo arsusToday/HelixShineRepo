@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_papa"
+    app:startDestination="@id/fragment_uno">
+    <fragment
+        android:id="@+id/fragment_uno"
+        android:name="com.alchemist.angelsagao.fragments.FragmentUno"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_uno" >
+
+        <action
+            android:id="@+id/action_fragment_uno_to_fragmentDos"
+            app:destination="@id/fragmentDos" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDos"
+        android:name="com.alchemist.angelsagao.fragments.FragmentDos"
+        android:label="fragment_dos"
+        tools:layout="@layout/fragment_dos" >
+        <action
+            android:id="@+id/action_fragmentDos_to_fragmentTres"
+            app:destination="@id/fragmentTres" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentTres"
+        android:name="com.alchemist.angelsagao.fragments.FragmentTres"
+        android:label="fragment_tres"
+        tools:layout="@layout/fragment_tres" >
+        <action
+            android:id="@+id/action_fragmentTres_to_fragmentQuadro"
+            app:destination="@id/fragmentQuadro" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentQuadro"
+        android:name="com.alchemist.angelsagao.fragments.FragmentQuadro"
+        android:label="fragment_quadro"
+        tools:layout="@layout/fragment_quadro" >
+        <action
+            android:id="@+id/action_fragmentQuadro_to_fragmentPiat"
+            app:destination="@id/fragmentPiat" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentPiat"
+        android:name="com.alchemist.angelsagao.fragments.FragmentPiat"
+        android:label="fragment_piat"
+        tools:layout="@layout/fragment_piat" />
+
+</navigation>
